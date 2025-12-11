@@ -26,17 +26,7 @@ export default function CV({ fields }) {
               {fields.workStartDate} - {fields.workEndDate ?? "Present"}
             </p>
           </div>
-          <ul className="description">
-            <li>
-              <p>{fields.description}</p>
-            </li>
-            <li>
-              <p>{fields.description}</p>
-            </li>
-            <li>
-              <p>{fields.description}</p>
-            </li>
-          </ul>
+          <p>{fields.description}</p>
         </div>
       </section>
       <section className="education">
