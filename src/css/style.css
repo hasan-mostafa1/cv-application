@@ -7,14 +7,21 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
+}
+
+#root {
+  max-width: 1280px;
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
     padding: 10px;
 }
@@ -27,7 +34,6 @@ img {
 .inputs {
     display: grid;
     grid-template-rows: max-content 1fr;
-    justify-items: center;
     gap: 15px;
     background-color: #3610bdaf;
     padding: 10px;
@@ -41,6 +47,7 @@ img {
     grid-auto-flow: column;
     justify-content: center;
     align-content: center;
+    justify-self: center;
 }
 
 .btns-list button {
